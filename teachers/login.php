@@ -21,16 +21,22 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
         header("Location: index.php?error=Password is required");
 	    exit();
 	}else{
-		$sql = "SELECT * FROM teacher WHERE user_name='$uname' AND password='$pass'";
+		$sql = "SELECT * FROM teacher WHERE tuser_name='$uname' AND password='$pass'";
 
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) === 1) {
 			$row = mysqli_fetch_assoc($result);
-            if ($row['user_name'] === $uname && $row['password'] === $pass) {
-            	$_SESSION['user_name'] = $row['user_name'];
+            if ($row['tuser_name'] === $uname && $row['password'] === $pass) {
+            	$_SESSION['tuser_name'] = $row['tuser_name'];
             	$_SESSION['name'] = $row['name'];
-            	$_SESSION['id'] = $row['id'];
+            	$_SESSION['tid'] = $row['tid'];
+				$_SESSION['name'] = $row['name'];
+				$_SESSION['status'] = $row['status'];
+				$_SESSION['phone'] = $row['phone'];
+				$_SESSION['image'] = $row['image'];
+				$_SESSION['email'] = $row['email'];
+				$_SESSION['address'] = $row['address'];
             	header("Location: home.php");
 		        exit();
             }else{
