@@ -61,19 +61,26 @@ button:hover{
 }
 
 h1 {
-	text-align: center;
-	color: #fff;
+    text-align: center;
+    color: #fff;
+    
+    margin-top: -39%;
 }
 
+
 a {
-	float: right;
-	background: #555;
-	padding: 10px 15px;
-	color: #fff;
-	border-radius: 5px;
-	margin-right: 10px;
-	border: none;
-	text-decoration: none;
+    float: right;
+    background: #555;
+    padding: 13px 9px;
+    color: #fff;
+    border-radius: 75px;
+    margin-left: 95%;
+    margin-top: -9%;
+    border: none;
+    text-decoration: none;
+    /* right: 100px
+px
+; */
 }
 a:hover{
 	opacity: .7;
