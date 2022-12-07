@@ -1,2 +1,2 @@
 # school
-Online school 
+Online school management system.
