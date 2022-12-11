@@ -90,7 +90,7 @@ body{
                     <div class="mt-3">
                       <h4><?php echo $_SESSION['name']?></h4>
                       <p class="text-secondary mb-1">Full Stack Developer</p>
-                      <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
+                      <p class="text-muted font-size-sm">Bay Area, San Francisco</p>
                       <button class="btn btn-primary">Follow</button>
                       <button class="btn btn-outline-primary">Message</button>
                     </div>
@@ -158,6 +158,15 @@ body{
                     </div>
                     <div class="col-sm-9 text-secondary">
                     <?php echo $_SESSION['address']; ?>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Status</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                    <?php echo $_SESSION['status']; ?>
                     </div>
                   </div>
                   <hr>
@@ -234,8 +243,7 @@ body{
         </div>
     </div>
 
-<h1>Hello, <?php echo $_SESSION['name']; ?></h1>
-     <a href="logout.php">Logout</a>
+
 </body>
 </html>
 

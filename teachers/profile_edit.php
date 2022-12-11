@@ -95,15 +95,30 @@ color:#69707a;
           </nav>
           <!-- /Breadcrumb -->
             <!-- Profile picture card-->
+
+            
+
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+            
+
             <div class="card mb-4 mb-xl-0">
                 <div class="card-header">Profile Picture</div>
                 <div class="card-body text-center">
                     <!-- Profile picture image-->
-                    <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                    <img class="img-account-profile rounded-circle mb-2" src="/SCHOOL/teachers/image/<?php echo $_SESSION['image']; ?>" alt="">
                     <!-- Profile picture help block-->
-                    <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
+                    <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB </div>
                     <!-- Profile picture upload button-->
-                    <button class="btn btn-primary" type="button">Upload new image</button>
+                    
+                    <input type="file"
+                    name="my_image"
+                    class="btn btn-primary">
+
+                    <input type="submit"
+                            name="submit"
+                            value="Upload"
+                            class="btn btn-primary">
+                            
                 </div>
             </div>
         </div>

@@ -139,7 +139,7 @@ body{
                       <h6 class="mb-0">Email</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                    <?php echo $_SESSION['Email']; ?>
+                    <?php echo $_SESSION['email']; ?>
                     </div>
                   </div>
                   <hr>
@@ -164,6 +164,7 @@ body{
                   <div class="row">
                     <div class="col-sm-12">
                       <a class="btn btn-info " target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
+                      <a class="btn btn-info "  href="/SCHOOL/students/logout.php">Logout</a>
                     </div>
                   </div>
                 </div>
